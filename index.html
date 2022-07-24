@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock & EDM Festival</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container headerContent">
+            <h1>Rock & EDM Festival</h1>
+
+            <nav class="principalNavigation">
+                <a href="#lineup">Line Up</a>
+                <a href="#gallery">Galeria</a>
+                <a href="#tickets">Tickets</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="video">
+        <div class="overlay">
+            <div class="container videoContent">
+                <h2>Rock & EDM Festival</h2>
+                <p>July 2022, Montevideo, Uruguay</p>
+            </div>
+        </div>
+        <video autoplay muted loop>
+            <source src="video/concierto.mp4" type="video/mp4">
+            <source src="video/concierto.ogg" type="video/ogg">
+            <source src="video/concierto.webm" type="video/webm">
+        </video>
+    </div>
+
+    <section class="container aboutFestival">
+        <div class="img">
+            <picture>
+                <source srcset="build/img/imagen_vocalista.avif" type="image/avif">
+                <source srcset="build/img/imagen_vocalista.webp" type="image/webp">
+                <img width="200" height="300" src="build/img/imagen_vocalista.jpg" alt="Vocalist image" loading="lazy">
+            </picture>
+        </div>
+        <div class="festivalContent">
+            <h2>Rock & EDM Festival</h2>
+            <p class="date">Julio 2022, Montevideo, Uruguay</p>
+            <p>Proin eu lorem diam. Nam quis eros vehicula,
+                viverra purus ac, consectetur lorem. Suspendisse potenti.
+                Praesent libero odio, malesuada non egestas faucibus,
+                aliquet eu elit.
+            </p>
+        </div>
+    </section>
+
+    <section id="lineup" class="lineup">
+        <h3>Line Up</h3>
+        <p class="day">Viernes 21</p>
+
+        <div class="container scenaryContainer">
+            <div class="scenary rock bgYellow">
+                <p class="scenaryName">Escenario Rock</p>
+                <ul class="calendar">
+                    <li>
+                        24:00 | <span>Metallica</span>
+                    </li>
+                    <li>
+                        22:00 | <span>Pearl Jam</span>
+                    </li>
+                    <li>
+                        20:00 | <span>KoRn</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Muse</span>
+                    </li>
+                    <li>
+                        18:00 | <span>Breaking Benjamin</span>
+                    </li>
+                    <li>
+                        17:00 | <span>30 Seconds to Mars</span>
+                    </li>
+                </ul>
+            </div>
+            <!--.scenary-->
+
+            <div class="scenary edm bgGreen">
+                <p class="scenaryName">Escenario EDM</p>
+                <ul class="calendar">
+                    <li>
+                        24:00 | <span>Deadmau5</span>
+                    </li>
+                    <li>
+                        22:00 | <span>Tïesto</span>
+                    </li>
+                    <li>
+                        20:00 | <span>Hardwell</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Dash Berlin</span>
+                    </li>
+
+                    <li>
+                        18:00 | <span>Fedde Legrand</span>
+                    </li>
+                    <li>
+                        17:00 | <span>Audien</span>
+                    </li>
+                </ul>
+            </div>
+            <!--.scenary-->
+        </div>
+        <!--.scenaryContainer-->
+
+        <p class="day">Sábado 22</p>
+
+        <div class="container scenaryContainer">
+            <div class="scenary rock bgGreen">
+                <p class="scenaryName">Escenario Rock</p>
+                <ul class="calendar">
+                    <li>
+                        24:00 | <span>Red Hot Chili Peppers</span>
+                    </li>
+                    <li>
+                        22:00 | <span>The Killers</span>
+                    </li>
+                    <li>
+                        20:00 | <span>Deftones</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Limp Bizkit</span>
+                    </li>
+
+                    <li>
+                        18:00 | <span>Papa Roach</span>
+                    </li>
+                    <li>
+                        17:00 | <span>Lamb of God</span>
+                    </li>
+                </ul>
+            </div>
+            <!--.scenary-->
+
+            <div class="scenary edm bgYellow">
+                <p class="scenaryName">Escenario EDM</p>
+                <ul class="calendar">
+                    <li>
+                        24:00 | <span>Paul Van Dyk</span>
+                    </li>
+                    <li>
+                        22:00 | <span>Armin Van Buuren</span>
+                    </li>
+                    <li>
+                        20:00 | <span>Above & Beyond</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Eric Prdyz</span>
+                    </li>
+
+                    <li>
+                        18:00 | <span>Ferry Corsten</span>
+                    </li>
+                    <li>
+                        17:00 | <span>Vini Vici</span>
+                    </li>
+                </ul>
+            </div>
+            <!--.scenary-->
+        </div>
+        <!--.scenaryContainer-->
+    </section>
+
+    <section id="gallery" class="gallery container">
+        <h3>Galería</h3>
+
+        <ul class="galleryImages"></ul>
+    </section>
+
+    <section id="tickets" class="tickets bgGreen">
+        <h3>Tickets</h3>
+
+        <div class="container ticketsContainer">
+            <div class="basic pass">
+                <p class="passName">Pase 1 día</p>
+                <header class="passHeader">
+                    <p>Incluye</p>
+                </header>
+                <div class="passBody">
+                    <ul>
+                        <li>Acceso a ambos escenarios</li>
+                        <li>Comida y bebida</li>
+                    </ul>
+                </div>
+                <footer class="passFooter">
+                    <p>$100</p>
+                </footer>
+                </footer>
+            </div>
+
+            <div class="premium pass">
+                <p class="passName">Pase 2 día</p>
+                <header class="passHeader">
+                    <p>Incluye</p>
+                </header>
+                <div class="passBody">
+                    <ul>
+                        <li>Acceso a ambos escenarios</li>
+                        <li>Comida y bebida</li>
+                        <li>Camisa del evento</li>
+                        <li>Accesto VIP</li>
+                    </ul>
+                </div>
+                <footer class="passFooter">
+                    <p>$180</p>
+                </footer>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Rock & EDM Festival. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="build/js/gallery.js"></script>
+
+</body>
+
+</html>
